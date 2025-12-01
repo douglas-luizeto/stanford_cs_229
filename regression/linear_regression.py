@@ -2,6 +2,7 @@
 # 1. Implement multivariate regression
 # 2. Implement learning rate decay
 # 3. Implement Mini-batch GD
+# 4. Display model comparison (also sklearn)
 
 import numpy as np
 import csv
@@ -53,10 +54,6 @@ class LinearRegression:
         self.x_min_ = None
         self.y_max_ = None
         self.y_min_ = None
-
-        # Variables for Data
-        self.X = None
-        self.y = None
 
     def fit(self, X, y, solver="batch"):
         # Data statistics
